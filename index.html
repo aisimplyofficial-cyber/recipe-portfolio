@@ -115,13 +115,13 @@
     font-weight: 700;
     font-size: 0.85rem;
     transition: all 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .btn-gold {
-    background: var(--gold);
-    color: white;
-  }
-
+  .btn-gold { background: var(--gold); color: white; }
   .btn-gold:hover { background: var(--brown); }
 
   .btn-outline {
@@ -129,7 +129,6 @@
     border: 1.5px solid var(--border);
     color: var(--gray);
   }
-
   .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 
   /* ADD RECIPE FORM */
@@ -141,7 +140,6 @@
     margin: 1rem;
     display: none;
   }
-
   .add-form.visible { display: block; }
 
   .add-form h3 {
@@ -172,12 +170,7 @@
     background: var(--cream);
   }
 
-  .add-form textarea {
-    width: 100%;
-    min-height: 80px;
-    resize: vertical;
-    margin-bottom: 0.6rem;
-  }
+  .add-form textarea { width: 100%; min-height: 80px; resize: vertical; margin-bottom: 0.6rem; }
 
   .form-label {
     font-size: 0.75rem;
@@ -192,24 +185,9 @@
   .form-field { margin-bottom: 0.6rem; }
 
   /* RECIPE GRID */
-  .container {
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .results-info {
-    font-size: 0.8rem;
-    color: var(--gray);
-    margin-bottom: 0.8rem;
-    padding: 0 0.2rem;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
-  }
+  .container { padding: 1rem; max-width: 1200px; margin: 0 auto; }
+  .results-info { font-size: 0.8rem; color: var(--gray); margin-bottom: 0.8rem; padding: 0 0.2rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
 
   /* RECIPE CARD */
   .card {
@@ -220,11 +198,7 @@
     transition: box-shadow 0.2s, transform 0.2s;
     cursor: pointer;
   }
-
-  .card:hover {
-    box-shadow: 0 6px 20px rgba(74,44,10,0.15);
-    transform: translateY(-2px);
-  }
+  .card:hover { box-shadow: 0 6px 20px rgba(74,44,10,0.15); transform: translateY(-2px); }
 
   .card-header {
     background: var(--brown);
@@ -235,13 +209,7 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-
-  .card-header h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    line-height: 1.3;
-    flex: 1;
-  }
+  .card-header h3 { font-family: 'Playfair Display', serif; font-size: 1rem; line-height: 1.3; flex: 1; }
 
   .cuisine-badge {
     background: var(--gold);
@@ -256,60 +224,16 @@
   }
 
   .card-body { padding: 0.9rem 1rem; }
-
-  .card-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-bottom: 0.7rem;
-  }
-
-  .tag {
-    background: var(--cream);
-    border: 1px solid var(--border);
-    color: var(--gray);
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-  }
-
+  .card-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.7rem; }
+  .tag { background: var(--cream); border: 1px solid var(--border); color: var(--gray); font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; }
   .tag.technique { border-color: var(--gold); color: var(--brown); }
 
-  .card-ingredient {
-    font-size: 0.8rem;
-    color: var(--gray);
-    margin-bottom: 0.6rem;
-  }
-
+  .card-ingredient { font-size: 0.8rem; color: var(--gray); margin-bottom: 0.6rem; }
   .card-ingredient strong { color: var(--brown); }
+  .card-preview { font-size: 0.82rem; color: var(--dark); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 
-  .card-preview {
-    font-size: 0.82rem;
-    color: var(--dark);
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .card-footer {
-    padding: 0.6rem 1rem;
-    border-top: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.75rem;
-    color: var(--gray);
-  }
-
-  .difficulty {
-    font-weight: 700;
-    font-size: 0.7rem;
-    padding: 0.15rem 0.5rem;
-    border-radius: 4px;
-  }
-
+  .card-footer { padding: 0.6rem 1rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--gray); }
+  .difficulty { font-weight: 700; font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; }
   .difficulty.Basic { background: #e8f5e9; color: #2e7d32; }
   .difficulty.Intermediate { background: #fff8e1; color: #f57f17; }
   .difficulty.Advanced { background: #fce4ec; color: #c62828; }
@@ -324,7 +248,6 @@
     padding: 1rem;
     overflow-y: auto;
   }
-
   .modal-overlay.visible { display: flex; align-items: flex-start; justify-content: center; }
 
   .modal {
@@ -345,106 +268,65 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+  .modal-header h2 { font-family: 'Playfair Display', serif; font-size: 1.4rem; line-height: 1.3; flex: 1; }
 
-  .modal-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    line-height: 1.3;
-    flex: 1;
-  }
-
-  .close-btn {
-    background: none;
-    border: none;
-    color: var(--cream);
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0 0.3rem;
-    opacity: 0.7;
-    transition: opacity 0.2s;
-  }
-
+  .close-btn { background: none; border: none; color: var(--cream); font-size: 1.5rem; cursor: pointer; padding: 0 0.3rem; opacity: 0.7; transition: opacity 0.2s; }
   .close-btn:hover { opacity: 1; }
 
   .modal-body { padding: 1.5rem; }
-
-  .modal-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-  }
+  .modal-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
 
   .modal-section { margin-bottom: 1.2rem; }
+  .modal-section h4 { font-family: 'Playfair Display', serif; color: var(--brown); font-size: 1rem; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); }
+  .modal-section p, .modal-section li { font-size: 0.88rem; line-height: 1.7; color: var(--dark); }
+  .modal-section ul, .modal-section ol { padding-left: 1.2rem; }
 
-  .modal-section h4 {
-    font-family: 'Playfair Display', serif;
-    color: var(--brown);
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid var(--border);
-  }
+  .notes-box { background: #fffbf0; border: 1.5px solid var(--light-gold); border-radius: 8px; padding: 1rem; font-size: 0.85rem; font-style: italic; color: var(--brown); line-height: 1.6; }
 
-  .modal-section p, .modal-section li {
-    font-size: 0.88rem;
-    line-height: 1.7;
-    color: var(--dark);
-  }
-
-  .modal-section ul, .modal-section ol {
-    padding-left: 1.2rem;
-  }
-
-  .notes-box {
-    background: #fffbf0;
-    border: 1.5px solid var(--light-gold);
-    border-radius: 8px;
-    padding: 1rem;
-    font-size: 0.85rem;
-    font-style: italic;
-    color: var(--brown);
-    line-height: 1.6;
+  .modal-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
   }
 
   .delete-btn {
     background: var(--red);
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 6px;
     cursor: pointer;
     font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    margin-top: 1rem;
+    flex: 1;
   }
 
-  .empty-state {
-    text-align: center;
-    padding: 3rem 1rem;
-    color: var(--gray);
-  }
+  .empty-state { text-align: center; padding: 3rem 1rem; color: var(--gray); }
+  .empty-state h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--brown); }
 
-  .empty-state h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: var(--brown);
-  }
-
-  .empty-state p { font-size: 0.9rem; }
-
+  /* PRINT OPTIMIZATION */
   @media print {
-    .search-bar, .stats, .btn, header p { display: none; }
-    .card { break-inside: avoid; }
+    body { background: white; color: black; }
+    .search-bar, .stats, header, .btn, .delete-btn, .close-btn, .results-info, .modal-overlay { 
+      display: none !important; 
+    }
+    .modal-overlay.visible { display: block; position: static; padding: 0; background: none; }
+    .modal { 
+      box-shadow: none; 
+      max-width: 100%; 
+      border: none; 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+    }
+    .modal-header { background: black !important; color: white !important; -webkit-print-color-adjust: exact; }
+    .cuisine-badge { border: 1px solid black; color: black; background: none; }
+    .notes-box { border: 1px solid #ccc; background: #fff !important; }
+    .modal-actions { display: none; }
   }
-  <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-    <button class="btn btn-gold" onclick="window.print()" style="flex: 1;">🖨️ Print Technical Sheet</button>
-    <button class="delete-btn" id="m_delete" style="flex: 1; margin-top: 0;">🗑 Remove from Portfolio</button>
-</div>
 </style>
 </head>
 <body>
@@ -477,78 +359,35 @@
   </div>
 </div>
 
-<!-- ADD RECIPE FORM -->
 <div class="add-form" id="addForm">
   <h3>📝 Add New Recipe</h3>
   <div class="form-grid">
-    <div class="form-field">
-      <label class="form-label">Recipe Name *</label>
-      <input type="text" id="f_name" placeholder="e.g. Boeuf Bourguignon">
-    </div>
-    <div class="form-field">
-      <label class="form-label">Cuisine *</label>
-      <input type="text" id="f_cuisine" placeholder="e.g. French">
-    </div>
-    <div class="form-field">
-      <label class="form-label">Category</label>
-      <input type="text" id="f_category" placeholder="e.g. Main / Sauce / Dessert">
-    </div>
+    <div class="form-field"><label class="form-label">Recipe Name *</label><input type="text" id="f_name"></div>
+    <div class="form-field"><label class="form-label">Cuisine *</label><input type="text" id="f_cuisine"></div>
+    <div class="form-field"><label class="form-label">Category</label><input type="text" id="f_category"></div>
     <div class="form-field">
       <label class="form-label">Difficulty</label>
-      <select id="f_difficulty">
-        <option>Basic</option>
-        <option>Intermediate</option>
-        <option>Advanced</option>
-      </select>
+      <select id="f_difficulty"><option>Basic</option><option>Intermediate</option><option>Advanced</option></select>
     </div>
-    <div class="form-field">
-      <label class="form-label">Key Ingredient *</label>
-      <input type="text" id="f_ingredient" placeholder="e.g. beef, chicken, eggs">
-    </div>
-    <div class="form-field">
-      <label class="form-label">Technique</label>
-      <input type="text" id="f_technique" placeholder="e.g. Braising">
-    </div>
-    <div class="form-field">
-      <label class="form-label">Yield</label>
-      <input type="text" id="f_yield" placeholder="e.g. 4 portions">
-    </div>
-    <div class="form-field">
-      <label class="form-label">Prep + Cook Time</label>
-      <input type="text" id="f_time" placeholder="e.g. 30 min prep / 2 hrs cook">
-    </div>
+    <div class="form-field"><label class="form-label">Key Ingredient *</label><input type="text" id="f_ingredient"></div>
+    <div class="form-field"><label class="form-label">Technique</label><input type="text" id="f_technique"></div>
+    <div class="form-field"><label class="form-label">Yield</label><input type="text" id="f_yield"></div>
+    <div class="form-field"><label class="form-label">Time</label><input type="text" id="f_time"></div>
   </div>
-  <div class="form-field">
-    <label class="form-label">Ingredients (one per line)</label>
-    <textarea id="f_ingredients" placeholder="500g beef chuck&#10;2 bottles red wine&#10;200g lardons"></textarea>
-  </div>
-  <div class="form-field">
-    <label class="form-label">Method (numbered steps)</label>
-    <textarea id="f_method" placeholder="1. Season beef generously with salt and pepper...&#10;2. Sear in batches until deeply browned..."></textarea>
-  </div>
-  <div class="form-field">
-    <label class="form-label">Chef Notes & Pro Tips</label>
-    <textarea id="f_notes" placeholder="Pro tip: Don't skip the sear — this is where flavor is built..."></textarea>
-  </div>
-  <div class="form-field">
-    <label class="form-label">Alejandro's Personal Notes</label>
-    <textarea id="f_personal" placeholder="My memories, personal variations, how I've made this at Royal Caribbean or Omni Grove..."></textarea>
-  </div>
-  <div class="form-field">
-    <label class="form-label">Wine / Cocktail Pairing</label>
-    <input type="text" id="f_pairing" placeholder="e.g. Burgundy Pinot Noir / Old Fashioned">
-  </div>
-  <button class="btn btn-gold" onclick="saveRecipe()">Save Recipe to Portfolio</button>
-  <button class="btn btn-outline" style="margin-left:0.5rem" onclick="toggleAddForm()">Cancel</button>
+  <div class="form-field"><label class="form-label">Ingredients</label><textarea id="f_ingredients"></textarea></div>
+  <div class="form-field"><label class="form-label">Method</label><textarea id="f_method"></textarea></div>
+  <div class="form-field"><label class="form-label">Chef Notes</label><textarea id="f_notes"></textarea></div>
+  <div class="form-field"><label class="form-label">Alejandro's Notes</label><textarea id="f_personal"></textarea></div>
+  <div class="form-field"><label class="form-label">Pairing</label><input type="text" id="f_pairing"></div>
+  <button class="btn btn-gold" onclick="saveRecipe()">Save Recipe</button>
+  <button class="btn btn-outline" onclick="toggleAddForm()">Cancel</button>
 </div>
 
-<!-- RECIPE GRID -->
 <div class="container">
   <div class="results-info" id="resultsInfo"></div>
   <div class="grid" id="grid"></div>
 </div>
 
-<!-- MODAL -->
 <div class="modal-overlay" id="modal" onclick="closeModal(event)">
   <div class="modal" id="modalBox">
     <div class="modal-header">
@@ -577,16 +416,17 @@
         <h4>🍷 Pairing</h4>
         <p id="m_pairing"></p>
       </div>
-      <button class="delete-btn" id="m_delete">🗑 Remove from Portfolio</button>
+      <div class="modal-actions">
+        <button class="btn btn-gold" style="flex:2" onclick="window.print()">🖨️ Print for Kitchen</button>
+        <button class="delete-btn" id="m_delete">🗑 Remove</button>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
 let recipes = [];
-let editingId = null;
 
-// LOAD from localStorage
 function load() {
   const saved = localStorage.getItem('chef_alejandro_recipes');
   if (saved) recipes = JSON.parse(saved);
@@ -599,89 +439,90 @@ function save() {
   localStorage.setItem('chef_alejandro_recipes', JSON.stringify(recipes));
 }
 
-// RENDER
 function render() {
   const name = document.getElementById('searchName').value.toLowerCase();
   const ingredient = document.getElementById('searchIngredient').value.toLowerCase();
   const cuisine = document.getElementById('filterCuisine').value.toLowerCase();
 
   let filtered = recipes.filter(r => {
-    const matchName = !name || r.name.toLowerCase().includes(name);
-    const matchIng = !ingredient || r.ingredient.toLowerCase().includes(ingredient);
-    const matchCuisine = !cuisine || r.cuisine.toLowerCase() === cuisine;
-    return matchName && matchIng && matchCuisine;
+    return (!name || r.name.toLowerCase().includes(name)) &&
+           (!ingredient || r.ingredient.toLowerCase().includes(ingredient)) &&
+           (!cuisine || r.cuisine.toLowerCase() === cuisine);
   });
 
   const grid = document.getElementById('grid');
-  const info = document.getElementById('resultsInfo');
-
-  info.textContent = filtered.length === recipes.length
-    ? `${recipes.length} recipe${recipes.length !== 1 ? 's' : ''} in your portfolio`
-    : `${filtered.length} of ${recipes.length} recipes match your search`;
-
-  if (filtered.length === 0 && recipes.length === 0) {
-    grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
-      <h3>Your portfolio is empty</h3>
-      <p>Click <strong>+ Add Recipe</strong> to start building your culinary library.<br>
-      Or use <strong>Import</strong> to load a saved portfolio.</p>
-    </div>`;
-    return;
-  }
+  document.getElementById('resultsInfo').textContent = `${filtered.length} recipes found`;
 
   if (filtered.length === 0) {
-    grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
-      <h3>No recipes found</h3>
-      <p>Try a different name or ingredient.</p>
-    </div>`;
+    grid.innerHTML = '<div class="empty-state"><h3>No recipes found.</h3></div>';
     return;
   }
 
   grid.innerHTML = filtered.map(r => `
     <div class="card" onclick="openModal('${r.id}')">
-      <div class="card-header">
-        <h3>${r.name}</h3>
-        <span class="cuisine-badge">${r.cuisine}</span>
-      </div>
+      <div class="card-header"><h3>${r.name}</h3><span class="cuisine-badge">${r.cuisine}</span></div>
       <div class="card-body">
-        <div class="card-meta">
-          ${r.category ? `<span class="tag">${r.category}</span>` : ''}
-          ${r.technique ? `<span class="tag technique">${r.technique}</span>` : ''}
-          ${r.time ? `<span class="tag">⏱ ${r.time}</span>` : ''}
-        </div>
-        <div class="card-ingredient">
-          <strong>Key ingredient:</strong> ${r.ingredient}
-        </div>
-        <div class="card-preview">${r.method ? r.method.split('\n')[0] : ''}</div>
-      </div>
-      <div class="card-footer">
-        <span class="difficulty ${r.difficulty}">${r.difficulty}</span>
-        ${r.pairing ? `<span>🍷 ${r.pairing.substring(0,30)}${r.pairing.length>30?'…':''}</span>` : ''}
+        <div class="card-meta">${r.technique ? `<span class="tag technique">${r.technique}</span>` : ''}</div>
+        <div class="card-preview">${r.method.substring(0,100)}...</div>
       </div>
     </div>
   `).join('');
 }
 
-// STATS
 function updateStats() {
   document.getElementById('totalCount').textContent = recipes.length;
-  const cuisines = new Set(recipes.map(r => r.cuisine)).size;
-  const techniques = new Set(recipes.map(r => r.technique).filter(Boolean)).size;
-  document.getElementById('cuisineCount').textContent = cuisines;
-  document.getElementById('techniqueCount').textContent = techniques;
+  document.getElementById('cuisineCount').textContent = new Set(recipes.map(r => r.cuisine)).size;
+  document.getElementById('techniqueCount').textContent = new Set(recipes.map(r => r.technique).filter(Boolean)).size;
 }
 
 function buildCuisineFilter() {
   const sel = document.getElementById('filterCuisine');
   const cuisines = [...new Set(recipes.map(r => r.cuisine))].sort();
-  const current = sel.value;
-  sel.innerHTML = '<option value="">All Cuisines</option>' +
-    cuisines.map(c => `<option value="${c.toLowerCase()}" ${c.toLowerCase()===current?'selected':''}>${c}</option>`).join('');
+  sel.innerHTML = '<option value="">All Cuisines</option>' + cuisines.map(c => `<option value="${c.toLowerCase()}">${c}</option>`).join('');
 }
 
-// SEARCH
-document.getElementById('searchName').addEventListener('input', render);
-document.getElementById('searchIngredient').addEventListener('input', render);
-document.getElementById('filterCuisine').addEventListener('change', render);
+function toggleAddForm() { document.getElementById('addForm').classList.toggle('visible'); }
+
+function saveRecipe() {
+  const r = {
+    id: Date.now().toString(),
+    name: document.getElementById('f_name').value,
+    cuisine: document.getElementById('f_cuisine').value,
+    category: document.getElementById('f_category').value,
+    difficulty: document.getElementById('f_difficulty').value,
+    ingredient: document.getElementById('f_ingredient').value,
+    technique: document.getElementById('f_technique').value,
+    yield: document.getElementById('f_yield').value,
+    time: document.getElementById('f_time').value,
+    ingredients: document.getElementById('f_ingredients').value,
+    method: document.getElementById('f_method').value,
+    notes: document.getElementById('f_notes').value,
+    personal: document.getElementById('f_personal').value,
+    pairing: document.getElementById('f_pairing').value,
+    date: new Date().toLocaleDateString()
+  };
+  if (!r.name || !r.cuisine) return alert('Name and Cuisine required');
+  recipes.unshift(r);
+  save();
+  toggleAddForm();
+  render();
+  updateStats();
+  buildCuisineFilter();
+}
+
+function openModal(id) {
+  const r = recipes.find(r => r.id === id);
+  document.getElementById('m_name').textContent = r.name;
+  document.getElementById('m_meta').innerHTML = `<span class="cuisine-badge">${r.cuisine}</span><span class="tag">${r.difficulty}</span>`;
+  document.getElementById('m_ingredients').innerHTML = r.ingredients.split('\n').map(i => `<li>${i}</li>`).join('');
+  document.getElementById('m_method').innerHTML = r.method.split('\n').map(s => `<li>${s}</li>`).join('');
+  document.getElementById('m_personal').textContent = r.personal;
+  document.getElementById('m_delete').onclick = () => { if(confirm('Delete?')){ recipes=recipes.filter(x=>x.id!==id); save(); closeModalDirect(); render(); updateStats(); }};
+  document.getElementById('modal').classList.add('visible');
+}
+
+function closeModal(e) { if (e.target.id === 'modal') closeModalDirect(); }
+function closeModalDirect() { document.getElementById('modal').classList.remove('visible'); }
 
 function clearSearch() {
   document.getElementById('searchName').value = '';
@@ -690,122 +531,6 @@ function clearSearch() {
   render();
 }
 
-// FORM
-function toggleAddForm() {
-  const f = document.getElementById('addForm');
-  f.classList.toggle('visible');
-  if (f.classList.contains('visible')) {
-    document.getElementById('f_name').focus();
-  }
-}
-
-function saveRecipe() {
-  const name = document.getElementById('f_name').value.trim();
-  const cuisine = document.getElementById('f_cuisine').value.trim();
-  const ingredient = document.getElementById('f_ingredient').value.trim();
-  if (!name || !cuisine || !ingredient) {
-    alert('Please fill in Recipe Name, Cuisine, and Key Ingredient.');
-    return;
-  }
-  const recipe = {
-    id: Date.now().toString(),
-    name,
-    cuisine,
-    category: document.getElementById('f_category').value.trim(),
-    difficulty: document.getElementById('f_difficulty').value,
-    ingredient,
-    technique: document.getElementById('f_technique').value.trim(),
-    yield: document.getElementById('f_yield').value.trim(),
-    time: document.getElementById('f_time').value.trim(),
-    ingredients: document.getElementById('f_ingredients').value.trim(),
-    method: document.getElementById('f_method').value.trim(),
-    notes: document.getElementById('f_notes').value.trim(),
-    personal: document.getElementById('f_personal').value.trim(),
-    pairing: document.getElementById('f_pairing').value.trim(),
-    date: new Date().toLocaleDateString()
-  };
-  recipes.unshift(recipe);
-  save();
-  clearForm();
-  toggleAddForm();
-  render();
-  updateStats();
-  buildCuisineFilter();
-}
-
-function clearForm() {
-  ['f_name','f_cuisine','f_category','f_ingredient','f_technique',
-   'f_yield','f_time','f_ingredients','f_method','f_notes','f_personal','f_pairing']
-    .forEach(id => document.getElementById(id).value = '');
-  document.getElementById('f_difficulty').value = 'Basic';
-}
-
-// MODAL
-function openModal(id) {
-  const r = recipes.find(r => r.id === id);
-  if (!r) return;
-
-  document.getElementById('m_name').textContent = r.name;
-
-  document.getElementById('m_meta').innerHTML = `
-    <span class="cuisine-badge">${r.cuisine}</span>
-    ${r.category ? `<span class="tag">${r.category}</span>` : ''}
-    <span class="difficulty ${r.difficulty}">${r.difficulty}</span>
-    ${r.technique ? `<span class="tag technique">${r.technique}</span>` : ''}
-    ${r.yield ? `<span class="tag">Yield: ${r.yield}</span>` : ''}
-    ${r.time ? `<span class="tag">⏱ ${r.time}</span>` : ''}
-    <span class="tag">Added: ${r.date}</span>
-  `;
-
-  const ingList = document.getElementById('m_ingredients');
-  ingList.innerHTML = r.ingredients
-    ? r.ingredients.split('\n').filter(Boolean).map(i => `<li>${i}</li>`).join('')
-    : '<li>No ingredients listed</li>';
-
-  const// Enhanced Method Rendering
-const methList = document.getElementById('m_method');
-methList.innerHTML = r.method
-  ? r.method.split('\n')
-      .filter(Boolean)
-      .map(s => `<li><span class="step-number"></span>${s.replace(/^\d+\.\s*/,'')}</li>`)
-      .join('')
-  : '<li>Manual technique not specified.</li>';
-
-  const notesSection = document.getElementById('m_notes_section');
-  notesSection.style.display = r.notes ? 'block' : 'none';
-  document.getElementById('m_notes').textContent = r.notes;
-
-  const personalSection = document.getElementById('m_personal_section');
-  personalSection.style.display = r.personal ? 'block' : 'none';
-  document.getElementById('m_personal').textContent = r.personal;
-
-  const pairingSection = document.getElementById('m_pairing_section');
-  pairingSection.style.display = r.pairing ? 'block' : 'none';
-  document.getElementById('m_pairing').textContent = r.pairing;
-
-  document.getElementById('m_delete').onclick = () => deleteRecipe(id);
-  document.getElementById('modal').classList.add('visible');
-}
-
-function closeModal(e) {
-  if (e.target === document.getElementById('modal')) closeModalDirect();
-}
-
-function closeModalDirect() {
-  document.getElementById('modal').classList.remove('visible');
-}
-
-function deleteRecipe(id) {
-  if (!confirm('Remove this recipe from your portfolio?')) return;
-  recipes = recipes.filter(r => r.id !== id);
-  save();
-  closeModalDirect();
-  render();
-  updateStats();
-  buildCuisineFilter();
-}
-
-// EXPORT / IMPORT
 function exportJSON() {
   const blob = new Blob([JSON.stringify(recipes, null, 2)], {type: 'application/json'});
   const a = document.createElement('a');
@@ -814,32 +539,17 @@ function exportJSON() {
   a.click();
 }
 
-function importJSON() {
-  document.getElementById('importFile').click();
-}
-
+function importJSON() { document.getElementById('importFile').click(); }
 function loadImport(e) {
-  const file = e.target.files[0];
-  if (!file) return;
   const reader = new FileReader();
-  reader.onload = ev => {
-    try {
-      const imported = JSON.parse(ev.target.result);
-      if (!Array.isArray(imported)) throw new Error();
-      recipes = [...imported, ...recipes];
-      save();
-      render();
-      updateStats();
-      buildCuisineFilter();
-      alert(`✅ Imported ${imported.length} recipes!`);
-    } catch {
-      alert('❌ Invalid file. Please use a previously exported portfolio JSON file.');
-    }
-  };
-  reader.readAsText(file);
+  reader.onload = ev => { recipes = JSON.parse(ev.target.result); save(); load(); };
+  reader.readAsText(e.target.files[0]);
 }
 
-// INIT
+document.getElementById('searchName').addEventListener('input', render);
+document.getElementById('searchIngredient').addEventListener('input', render);
+document.getElementById('filterCuisine').addEventListener('change', render);
+
 load();
 </script>
 </body>
