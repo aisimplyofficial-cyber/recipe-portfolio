@@ -758,10 +758,14 @@ function openModal(id) {
     ? r.ingredients.split('\n').filter(Boolean).map(i => `<li>${i}</li>`).join('')
     : '<li>No ingredients listed</li>';
 
-  const methList = document.getElementById('m_method');
-  methList.innerHTML = r.method
-    ? r.method.split('\n').filter(Boolean).map(s => `<li>${s.replace(/^\d+\.\s*/,'')}</li>`).join('')
-    : '<li>No method listed</li>';
+  const// Enhanced Method Rendering
+const methList = document.getElementById('m_method');
+methList.innerHTML = r.method
+  ? r.method.split('\n')
+      .filter(Boolean)
+      .map(s => `<li><span class="step-number"></span>${s.replace(/^\d+\.\s*/,'')}</li>`)
+      .join('')
+  : '<li>Manual technique not specified.</li>';
 
   const notesSection = document.getElementById('m_notes_section');
   notesSection.style.display = r.notes ? 'block' : 'none';
